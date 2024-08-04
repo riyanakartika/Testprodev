@@ -1,0 +1,37 @@
+.sidebar {
+    width: 200px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  }
+  
+  .sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .nav-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-list li {
+    margin-bottom: 10px;
+  }
+  
+  .nav-list a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .nav-list a:hover {
+    color: #007bff;
+  }
+  
+  .sidebar-footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+  }
+  

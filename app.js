@@ -1,21 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Dashboard from './components/Dashboard';
 import UserPage from './components/UserPage';
-import UserDetail from './components/UserDetail';
 import TablePage from './components/TablePage';
+import './App.css';
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <Switch>
-        <Route path="/dashboard" component={Dashboard} />
-        <Route path="/users" component={UserPage} exact />
-        <Route path="/users/:id" component={UserDetail} />
-        <Route path="/table" component={TablePage} />
-      </Switch>
+      <div className="app">
+        <Routes>
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/users" element={<UserPage />} />
+          <Route path="/table" element={<TablePage />} />
+        </Routes>
+      </div>
     </Router>
   );
-}
+};
 
 export default App;
